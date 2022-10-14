@@ -17,8 +17,8 @@ heapless = "0.7"
 clap = { version = "4", features = ["derive"] }
 
 [dev-dependencies]
-proptest = "*"
-criterion = "*"
+proptest = "1"
+criterion = "0.4"
 
 [[bin]]
 name = "vax-number"
