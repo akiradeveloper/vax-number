@@ -18,7 +18,7 @@ fn bench_encode(c: &mut Criterion) {
 }
 
 fn bench_decode(c: &mut Criterion) {
-    c.bench_function("encode", |b| {
+    c.bench_function("decode", |b| {
         let mut s = vec![];
         for i in 0..21 {
             let c = match i % 2 {
