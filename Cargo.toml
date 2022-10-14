@@ -1,0 +1,29 @@
+[package]
+name = "vax-number"
+version = "1.0.0"
+authors = ["Akira Hayakawa <ruby.wktk@gmail.com>"]
+edition = "2021"
+license = "MIT"
+description = "Vax number encoder"
+repository = "https://github.com/akiradeveloper/vax-number"
+readme = "README.md"
+categories = ["Encoding"]
+keywords = ["encode", "decode", "no_std"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+heapless = "0.7"
+clap = { version = "4", features = ["derive"] }
+
+[dev-dependencies]
+proptest = "*"
+criterion = "*"
+
+[[bin]]
+name = "vax-number"
+path = "src/main.rs"
+
+[[bench]]
+name = "bench"
+harness = false
