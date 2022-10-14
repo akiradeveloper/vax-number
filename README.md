@@ -34,6 +34,13 @@ So let's compress the vaccination status into an integer called Vax Number.
 - `vax-number encode VAX_STATUS` to encode a vaccination status into a vax-number.
 - `vax-number decode VAX_NUMBER` to decode a vax-number.
 
+```
+$ vax-number encode PPMP
+649
+$ vax-number decode 649
+PPMP
+```
+
 ## Features
 
 - Support no_std
