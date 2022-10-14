@@ -33,11 +33,8 @@ fn decode_one(x: u64) -> char {
     DECODE_MAPPING[x as usize]
 }
 pub fn decode(v: u64) -> Vec<char, 21> {
-    if v == 0 {
-        return Vec::new();
-    }
-    let msb = 63 - v.leading_zeros() as usize;
-    let n = msb / 3 + 1;
+    let rem = 64 - v.leading_zeros() as usize;
+    let n = (rem + 2) / 3;
     let mut out = Vec::new();
     unsafe { out.set_len(n) };
     for i in 0..n {
