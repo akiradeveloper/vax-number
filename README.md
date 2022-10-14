@@ -1,5 +1,7 @@
 # vax-number
 
+[![Crates.io](https://img.shields.io/crates/v/vax-number.svg)](https://crates.io/crates/vax-number)
+
 **Disclaimer: This is a joke program.**
 
 Covid19 is a dangerous virus and
