@@ -27,7 +27,8 @@ So let's compress the vaccination status into an integer called Vax Number.
 
 ## How To Install
 
-- `cargo install --path .` to install the binary.
+- `cargo install --path .` to install from source or
+- `cargo install vax-number` to install from crates.io
 
 ## How To Use
 
